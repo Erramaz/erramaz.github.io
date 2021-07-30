@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Source Code Pro', monospace;
+}
+
+strong {
+    font-weight: 800;
+}
+
+
+/* ---------------------------- HEADER ------------------- */
+
+header {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+}
+
+.logo i {
+    position: relative;
+    top: 0.7rem;
+}
+
+.logo i,
+nav i {
+    margin: 0 .5rem;
+    font-size: 2rem;
+}
+
+.logo p {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+
+/* -------------------------------- MAIN ----------------------- */
+
+main {
+    height: 90vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.title {
+    font-size: 3.2rem;
+}
+
+.main-item {
+    margin: 1rem;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+@keyframes barra {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.typewriter h2 {
+    overflow: hidden;
+    animation-name: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(100, end);
+    animation-iteration-count: 1;
+    animation: barra .75s step-end infinite, typing 3s steps(100, end) 1;
+    border-right: .15em solid orange;
+}
+
+.typewriter h2:nth-child(1) {
+    animation-delay: 0s;
+    animation-fill-mode:
+}
+
+.typewriter h2:nth-child(2) {
+    visibility: hidden;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
