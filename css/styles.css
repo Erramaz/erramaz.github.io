@@ -101,13 +101,15 @@ nav span {
 nav i:hover,
 nav a:hover {
     color: orange;
-    transition: 300ms all;
+    transition: 300ms;
 }
 
 .logo:active,
 nav i:active,
 nav a:active {
-    color: rgba(253, 172, 21, 0.425);
+    color: rgba(253, 172, 21, 0.685);
+    font-weight: 800;
+    transition: none;
 }
 
 nav i:active {
@@ -164,7 +166,7 @@ main {
 
 .main-item i:active {
     transform: scale(2.1);
-    transition: 200ms all;
+    transition: 100ms all;
     color: orange;
 }
 
@@ -212,6 +214,159 @@ main {
     visibility: hidden;
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
+}
+
+
+/* ----------------------SOBRE MÍ----------------------- */
+
+.fondo {
+    background: linear-gradient(23deg, rgba(65, 65, 65, 1) 1%, rgba(211, 211, 211, 0.8802871490393032) 77%, rgba(255, 255, 255, 1) 100%);
+    height: fit-content;
+    overflow: auto;
+}
+
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    width: 100vw;
+    height: 90vh;
+}
+
+.sobre-mi img {
+    border-radius: 50%;
+    width: 9rem;
+    height: fit-content;
+    box-shadow: 5px 5px 10px grey;
+    filter: grayscale(100%);
+}
+
+.sobre-mi img:hover,
+.sobre-mi img:active {
+    filter: none;
+    transition: 1s;
+}
+
+.titlebox:hover,
+.titlebox:active {
+    background: #333333;
+    color: white;
+    border-left: orange solid .3rem;
+    transition: 400ms;
+}
+
+.titlebox {
+    background: white;
+    padding: 1rem 1.5rem;
+    width: fit-content;
+    border: thin solid #3333332c;
+    border-left: .3rem solid #333333;
+    margin: 2rem;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.397);
+}
+
+.titlebox h1 {
+    width: fit-content;
+    animation: barra .75s step-end infinite;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    text-transform: uppercase;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+.info p {
+    background: #333333;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.281);
+    border-left: 0.2rem solid rgba(255, 255, 255, 0.281);
+    color: white;
+    font-weight: 300;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 10px 10px 10px #3333335e
+}
+
+.info p:hover {
+    background: white;
+    border-left: 0.1rem solid #333333;
+    border-top: 0.2rem solid #333333;
+    color: black;
+    transition: 300ms all;
+}
+
+
+/* --------------------- APTITUDES ----------------------- */
+
+.capabilities {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #333333;
+    box-shadow: 5px 5px 5px #2a2a2a41;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 280px;
+    min-height: 280px;
+}
+
+.card i {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+    text-align: center;
+    align-self: center;
+}
+
+.card p {
+    font-size: 0.8rem;
+    margin: 1rem 0rem .5rem;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.card-title h2 {
+    align-self: baseline;
+}
+
+.card-title,
+.curly {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orange;
+}
+
+.card:hover {
+    color: black;
+    background-color: white;
+    border-left: 0.3rem solid orange;
+    border: ;
+    transition: 300ms;
 }
 
 
